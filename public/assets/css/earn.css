@@ -1,0 +1,233 @@
+/* উপার্জন */
+.banlace_main_container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 24px;
+}
+
+.balance_child_container {
+    background: #7678ed;
+    border-radius: 12px;
+    position: relative;
+}
+
+.balance_child_container::after {
+    content: "";
+    position: absolute;
+    background: url(../images/balance_banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+}
+
+.balance_container_info {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+
+.balance_container {
+    background-image: url(../images/balance_banner.png);
+    height: 200px;
+
+}
+
+.qr_scan {
+    width: 103px;
+    height: 100px;
+}
+
+/* right side statistic*/
+
+.static {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.static .bg_1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background: rgba(118, 120, 237, 0.5);
+
+}
+
+.static .bg_2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background: #7678ed;
+}
+
+.statistic_section {
+    border-radius: 12px;
+    height: 320px;
+}
+
+.statistic_info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table_main_container {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.search_main_container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.table_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search_field input {
+    padding: 12px;
+    width: 218px;
+    height: 46px;
+    border-radius: 12px;
+    background: #fff;
+    border: 1px solid #f3f3f4;
+}
+
+.search_field input::placeholder {
+    font-size: 14px;
+    color: #9db4c0;
+    padding-left: 40px;
+}
+
+.search_field input:focus {
+    outline: 0;
+}
+
+
+.course_filter select {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    color: var(--text_accent);
+    padding-bottom: 10px;
+
+}
+
+.course_filter select {
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+
+/* for IE10 */
+.course_filter select::-ms-expand {
+    display: none;
+}
+
+.course_filter select:focus {
+    outline: 0;
+}
+
+.course_filter select option:focus {
+    outline: 0;
+}
+
+.search_field {
+    position: relative;
+}
+
+.search_field .search_icon {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+}
+
+.course_filter {
+    position: relative;
+    width: 120px;
+    height: 46px;
+    border-radius: 6px;
+}
+
+.filter_icon {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    top: 5px;
+}
+
+/* table */
+.student_table {
+    width: 100%;
+}
+
+.table_head th {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.table_data td {
+    padding-top: 15px;
+}
+
+.table_data td:last-child {
+    color: #009459;
+}
+
+.table_data td:nth-last-child(2) {
+    color: #FF1E4C;
+}
+
+
+
+@media(max-width:1236px) {
+    .banlace_main_container {
+        grid-template-columns: 1fr;
+
+    }
+}
+
+@media(max-width:750px) {
+    .table_header .search_main_container {
+        flex-direction: column;
+    }
+
+}
+
+@media(max-width:550px) {
+
+    .student_table {
+        overflow-x: auto;
+    }
+}
+
+@media(max-width:442px) {
+    .table_header {
+        flex-direction: column;
+    }
+
+    .balance_container_info {
+        flex-direction: column;
+    }
+
+    .statistic_info {
+        flex-direction: column;
+
+    }
+
+    .static_overview {
+        margin-top: 10px;
+        margin-left: 3rem;
+    }
+
+}

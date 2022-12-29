@@ -1,0 +1,173 @@
+/* কুইজ ম্যানেজার */
+/* video upload container */
+.video_input_box {
+    height: 60px;
+    padding-top: 18px;
+}
+
+
+.quiz_header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+
+}
+
+.form_container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 15px;
+}
+
+.quiz_shedule {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.time_items {
+    background-color: #faf9f9;
+    border-radius: 12px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.time_items p {
+    padding: 5px 25px;
+    color: #1D2D44;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.qestion_container {
+    border-radius: 12px;
+}
+
+.options_container {
+    display: flex;
+    gap: 70px;
+    align-items: center;
+}
+
+.options_main_container {
+    position: relative;
+}
+
+.input_option {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.quiz_submit {
+    position: absolute;
+    bottom: -90px;
+    right: -40px;
+}
+
+.submit_btn_container {
+    display: flex;
+    justify-content: end;
+}
+
+.radio_wraper {
+    display: flex;
+    align-items: center;
+}
+
+/* custom radio button */
+/* The container */
+.option_wrapper {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.option_wrapper input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.quiz_checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.option_wrapper:hover input~.quiz_checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.option_wrapper input:checked~.quiz_checkmark {
+    background-color: #7678ED;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.quiz_checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.option_wrapper input:checked~.quiz_checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.option_wrapper .quiz_checkmark:after {
+    top: 6px;
+    left: 6px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: white;
+}
+
+@media (max-width:626px) {
+    .options_container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .quiz_header_container {
+        flex-direction: column;
+    }
+
+    .quiz_shedule {
+        margin-top: 10px;
+    }
+
+    .quiz_question {
+        text-align: center;
+    }
+}
+
+@media (max-width:522px) {
+    .quiz_shedule {
+        flex-direction: column;
+    }
+}

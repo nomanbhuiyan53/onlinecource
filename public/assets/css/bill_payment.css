@@ -1,0 +1,140 @@
+.billing_main_container {
+    display: grid;
+    grid-template-columns: 584px 1fr;
+    gap: 24px;
+}
+
+.payment_input {
+    position: relative;
+}
+
+.payment_input input {
+    padding: 18px 8px 16px 20px;
+}
+
+.payment_btn {
+    position: absolute;
+    top: 7px;
+    right: 0;
+    right: 8px;
+}
+
+
+.payment_bill_items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    gap: 24px;
+}
+
+
+.bill_main_container {
+    background-color: #fff;
+    height: 160px;
+    border-radius: 24px;
+    background: #fff;
+}
+
+.bill_container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bill_container .upay_img {
+    width: 99.31px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bill_container .bkash_img {
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 171.45px;
+    height: 100px;
+}
+
+.bill_container .nagad_img {
+    width: 150px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bill_container .surujpay_img {
+    width: 150px;
+    height: 58.12px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bill_container .rocket_img {
+    width: 119.4px;
+    height: 80px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bill_container .amarpay_img {
+    width: 206.05px;
+    height: 60px;
+    margin: 0;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.bill_container img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.bill_main_container {
+    position: relative;
+}
+
+/* payment radio button  */
+.payment_radio_btn {
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+@media (max-width:1563px) {
+    .billing_main_container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width:594px) {
+    .payment_btn {
+        position: relative;
+
+    }
+}
