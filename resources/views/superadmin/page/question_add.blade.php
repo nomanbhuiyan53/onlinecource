@@ -46,7 +46,7 @@
 
                                 <div class="col-12 mt-3">
                                     <label for="inputEmail4" class="form-label">Answer : </label> 
-                                    <select name="ans" class="form-select answer">
+                                    <select name="ans[]" class="form-select answer">
                                         
                                     </select>
                                 </div>
@@ -94,7 +94,7 @@
 
                             <div class="col-12 mt-3">
                                 <label for="inputEmail4" class="form-label">Answer</label> 
-                                <select name="ans" class="form-select answer">
+                                <select name="ans[]" class="form-select answer">
                                     
                                 </select>
                             </div>

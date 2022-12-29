@@ -23,14 +23,14 @@ class QuestionController extends Controller
         
         if($q_counte !=NULL){
             for ($i=0; $i < $q_counte; $i++) { 
-                // echo $request->question[$i];
+                // return $request->ans;
                 $qus = new Question();
                 $qus->que_cat_id = $request->que_cat_id;
                 $qus->question = $request->question[$i]; 
                 $qus->op_1 = $request->op_1[$i]; 
                 $qus->op_2 = $request->op_2[$i]; 
                 $qus->op_3 = $request->op_3[$i]; 
-                $qus->op_4 = $request->op_4[$i]; 
+                $qus->op_4 = $request->op_4[$i];
                 $qus->ans = $request->ans[$i]; 
                 $qus->save();
                
